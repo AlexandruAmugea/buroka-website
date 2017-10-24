@@ -1,0 +1,22 @@
+<div class="container" ng-controller="galleryCtrl">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="preview-wrapper">
+                <img ng-src="{{selectedImage.images.standard_resolution.url}}" class="img-gallery-preview" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3" ng-repeat="pic in pictures track by $index">
+            <img ng-src="{{pic.images.thumbnail.url}}" class="img-gallery-thumbnail" ng-click="changePreview(pic)"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="gallery-controls">
+                <button class="btn btn-gallery prev pull-left" ng-click="prevPage()" ng-show="options.activePage > 1">&lt;</button>
+                <button class="btn btn-gallery next pull-right" ng-click="nextPage()"  ng-show="options.activePage < options.pages">&gt;</button>
+                <p class="text-center">{{options.activePage}}/{{options.pages}}</p>
+                
+            </div>  
+        </div>
+    </div>
+</div>

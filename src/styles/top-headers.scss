@@ -1,0 +1,25 @@
+.header {
+    padding: 50px 0;
+
+    &.header--about-us {
+        background: url('~/images/bg/about-us-bg.jpg') no-repeat left top;
+        background-size: cover;
+        padding-bottom: 155px;
+
+        h2 {
+            margin-bottom: 40px;
+            font-size: 40px;
+            color: $white;
+            text-transform: uppercase;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+
+    & .logo {
+        max-width: 250px;
+        height: auto;
+    }
+}
