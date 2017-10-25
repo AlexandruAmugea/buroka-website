@@ -1,0 +1,156 @@
+.section--about-us {
+    padding: 75px 0;
+    background: $darker-white;
+
+    & .panel--about-us {
+        margin-bottom: 50px;
+
+        & h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $black;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+    
+            &:before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 50px;
+                background: $green;
+                left: 0;
+                bottom: -3px;
+            }
+        }
+
+        & h4 {
+            color: $whiter-black;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        & p {
+            margin-bottom: 30px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $whiter-black;
+            line-height: 2;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        & ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                width: 28px;
+                height: 28px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 300px 0 20px;
+    background: url('~/images/bg/footer-bg.jpg') no-repeat left top;
+    background-size: cover;
+
+    & h5 {
+        color: $white;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    & h6 {
+        color: $white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    & p {
+        text-align: center;
+        color: $white;
+        font-weight: 200;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & li {
+
+            & a {
+                color: $white;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 200;
+
+                &:hover {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    & a {
+        color: $white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 200;
+
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+
+    & .footer-links {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    & ul.list-privacy li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    p.small-terms {
+        font-weight: 200;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    ul.social-icons-footer {
+        float: right;
+        & li {
+            display: inline-block;
+            margin-left: 15px;
+
+            img {
+                height: 20px;
+            }
+        }
+
+    }
+}
