@@ -1,6 +1,17 @@
 .header {
     padding: 50px 0;
 
+    h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+        color: $white;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
     &.header--about-us {
         background: url('~/images/bg/about-us-bg.jpg') no-repeat left top;
         background-size: cover;
@@ -16,16 +27,31 @@
             background: $green;
             position: absolute;
         }
+    }
 
-        h2 {
-            margin-bottom: 40px;
-            font-size: 40px;
-            color: $white;
-            text-transform: uppercase;
+    &.header--brokerage {
+        background: url('~/images/bg/brokerage.jpg') no-repeat left top;
+        background-size: cover;
+        padding-bottom: 155px;
+        position: relative;
 
-            strong {
-                font-weight: 700;
-            }
+        &:after {
+            content: "";
+            width: 60%;
+            height: 10px;
+            bottom: -10px;
+            left: 20%;
+            background: $green;
+            position: absolute;
+        }
+
+        & h2 {
+            line-height: 1.35;
+            margin-top: 100px;
+        }
+
+        & .btn-green {
+            margin-top: 50px;
         }
     }
 

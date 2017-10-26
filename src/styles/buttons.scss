@@ -1,0 +1,18 @@
+.btn-green {
+    color: $white;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $green;
+    text-transform: uppercase;
+    transition: .25s all ease;
+    border-radius: 5px;
+    box-shadow: none;
+
+    &:hover, &:focus {
+        background-color: darken($green, 5%);
+        color: $white;
+        transition: .25s all ease;
+        box-shadow: none;
+    }
+}
