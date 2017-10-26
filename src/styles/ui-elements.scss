@@ -3,15 +3,33 @@
 */
 
 .custom--tabs {
+    & h1 {
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $black;
+        position: relative;
+        margin-top: 100px;
 
-    & .tab-panel .row {
-        margin-bottom: 50px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 50px);
+            bottom: -10px;
+            background-color: $green;
+            width: 100px;
+            height: 5px;
+        }
+    }
+
+    & .tab-pane .row {
+        margin-top: 50px;
     }
 
     & .custom--tabs-nav {
         list-style: none;
         padding: 0;
-        margin: 150px auto 50px;
+        margin: 75px auto 30px;
         max-width: 900px;
 
         &.custom--tabs-nav {
@@ -84,6 +102,11 @@
     & hr {
         border: none;
         border-bottom: 1px solid $green;
+    }
+
+    & h2 strong {
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
 }

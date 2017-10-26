@@ -23,3 +23,12 @@ p {
     font-weight: 200;
 }
 
+p em {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.c-green {
+    color: $green;
+}
+

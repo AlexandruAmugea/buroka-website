@@ -28,10 +28,16 @@
                 font-size: 16px;
 
                 &:hover {
-                    font-weight: 400;
-                    font-weight: 15px;
                     text-decoration: none;
                 }
+            }
+        }
+
+        & li.active {
+            background: lighten( $green, 10%);
+
+            & a {
+                font-weight: 700;
             }
         }
     }
