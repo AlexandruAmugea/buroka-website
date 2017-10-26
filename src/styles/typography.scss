@@ -3,6 +3,10 @@
     background: $darker-white;
 }
 
+h1 {
+    font-size: 46px;
+}
+
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -10,7 +14,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -30,5 +34,19 @@ p em {
 
 .c-green {
     color: $green;
+}
+
+.white {
+    color: $white;
+}
+
+a {
+    color: $green;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: $green;
+    }
 }
 

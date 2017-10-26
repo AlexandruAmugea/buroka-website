@@ -154,3 +154,51 @@ footer {
 
     }
 }
+
+.section-bank-offer {
+    background: url('~/images/bg/bank-1.jpg') no-repeat left top;
+    padding: 75px 0;
+    background-size: cover;
+    
+    & h1 {
+        text-transform: uppercase;
+        color: $white;
+        position: relative;
+        margin-bottom: 75px;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & h3 {
+        margin-bottom: 30px;
+    }
+}
+
+.section-green {
+    background: $green;
+    padding: 20px 30px;
+}
+
+/* ======================================
+        Consultation form 
+=======================================*/
+
+.consultation--form {
+    padding: 75px 30px 0;
+    background: $darker-white;
+    text-align: center;
+
+    & h2 {
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 75px auto 0;
+    }
+}

@@ -48,3 +48,11 @@
         }
     }
 }
+
+@mixin heading-underline($width, $height, $color) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    background: $color;
+}

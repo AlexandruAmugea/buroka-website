@@ -2,14 +2,19 @@
 * Custom tabs - overwrite bootsrap tabs
 */
 
+
+/* =========================================
+    Custom tabs - overwrite bootsrap tabs
+==========================================*/
+
 .custom--tabs {
+    padding: 100px 0;
     & h1 {
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 600;
         text-transform: uppercase;
         color: $black;
         position: relative;
-        margin-top: 100px;
 
         &:after {
             content: "";
