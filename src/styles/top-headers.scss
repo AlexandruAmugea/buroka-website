@@ -75,4 +75,12 @@
         max-width: 250px;
         height: auto;
     }
+
+    &.header-home {
+        position: absolute;
+        left: calc(50% - 600px);
+        top: 0;
+        z-index: 10000;
+        max-width: 1200px;
+    }
 }

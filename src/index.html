@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="bundle.css">
@@ -14,7 +16,57 @@
 </head>
 
 <body>
-  <header class="header header-crypto">
+  <!-- ======================= Home slider ======================== -->
+  
+  <div class="slick-carousel">
+    <div>
+      <img src="images/slider/1.jpg" />
+      <div class="description">
+        <h2 class="text-center"><strong>Create</strong> and <strong>advance</strong> your complete, <br>
+            <strong>cost-efficient brokerage house</strong></h2>
+            <ul>
+              <li>We Are The First to Provide <strong>$0 Setup</strong> Brokerage <strong>White Label</strong> for <strong>Startups</strong></li>
+              <li>Custom <strong>CRM</strong> and high-end <strong>Trading Platforms</strong> for <strong>Existing Brokers</strong></li>
+              <li>All-new <strong>CFD Brokerage</strong> Solution for <strong>Banks</strong></li>
+              <li>Exchange-connected <strong>Crypto Brokerage</strong> solution</li>
+            </ul>
+            <button class="btn btn-green btn-cta-consultation">Schedule a Consultation</button>
+      </div>
+    </div>
+    <div>
+        <img src="images/slider/2.jpg" />
+      <div class="description">
+        <h2><strong>Full</strong> turn-key <strong>White Label solution</strong> <br>
+            at <strong>$0 setup</strong> fee includes:</h2>
+            <ul>
+              <li>Ultra-fast <strong>Trading Platform</strong> </li>
+              <li>Custom <strong>CRM</strong></li>
+              <li><strong>Client Office</strong></li>
+              <li><strong>IB System</strong></li>
+            </ul>
+            <button class="btn btn-green btn-cta-consultation">Schedule a Consultation</button>
+      </div>
+    </div>
+    <div>
+      <img src="images/slider/3.jpg" />
+      <div class="description">
+        <h2><strong>Be</strong> one the <strong>first successful</strong><br>
+            <strong>Crypto-Brokerages</strong> to offer <strong>CFDs</strong> on:</h2>
+            <ul>
+              <li><strong>Bitcoin</strong></li>
+              <li><strong>Etherium</strong></li>
+              <li><strong>Ripple</strong></li>
+              <li><strong>Dash</strong></li>
+              <li><strong>Litecoin</strong></li>
+            </ul>
+            <button class="btn btn-green btn-cta-consultation">Schedule a Consultation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= End of Home slider ======================== -->
+
+  <header class="header header-home">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-3">
@@ -41,44 +93,8 @@
             </ul>
           </nav>
         </div>
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h2><strong>Become new age pioneer by starting <br>
-                your own Bitcoin brokerage</strong></h2>
-            <button class="btn btn-green">Schedule a Consultation</button>
-          </div>
-        </div>
       </div>
   </header>
-
-  <section class="section-crypto--chart">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Cryptocurrency Market</h2>
-          <!-- TradingView Widget BEGIN -->
-          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-          <script type="text/javascript">
-            new TradingView.widget({
-              "width": 980,
-              "height": 610,
-              "symbol": "INDEX:BIT",
-              "interval": "D",
-              "timezone": "Etc/UTC",
-              "theme": "Light",
-              "style": "1",
-              "locale": "en",
-              "toolbar_bg": "#f1f3f6",
-              "enable_publishing": false,
-              "allow_symbol_change": true,
-              "hideideas": true
-            });
-          </script>
-          <!-- TradingView Widget END -->
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="section-crypto--description">
     <div class="container">
@@ -236,7 +252,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- ======================= End of consultation form =================== -->
 
   <!-- ===================== Footer =================== -->
@@ -311,6 +327,18 @@
   </footer>
 
   <!-- ===================== End of Footer =================== -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick-carousel').slick({
+        "arrows": false,
+        "autoplay": true,
+        "adaptiveHeight": true,
+        "autoplaySpeed": 10000
+      });
+    });
+  </script>
+
 </body>
 
 </html>
