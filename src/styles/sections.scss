@@ -195,10 +195,29 @@ footer {
     & h2 {
         color: $black;
         text-transform: uppercase;
+        position: relative;
     }
 
-    form {
+    & form {
         max-width: 400px;
         margin: 75px auto 0;
+    }
+}
+
+.header {
+
+    & .consultation--form {
+        padding: 0 30px 0;
+
+        & form {
+            max-width: 900px;
+            margin: 30px auto 0;
+        }
+
+        & h2:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
     }
 }
