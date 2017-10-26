@@ -25,7 +25,7 @@ h2 strong {
 
 p {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     color: $black;
 }
 
@@ -40,6 +40,10 @@ p em {
 
 .white {
     color: $white;
+}
+
+.black {
+    color: $black !important;
 }
 
 a {

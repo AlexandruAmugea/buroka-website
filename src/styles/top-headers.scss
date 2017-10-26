@@ -55,6 +55,22 @@
         }
     }
 
+    &.header-crypto {
+        background: url('~/images/bg/crypto.jpg') no-repeat left top;
+        background-size: cover;
+        padding-bottom: 155px;
+        position: relative;
+
+        & .btn-green {
+            margin: 75px 0 0;
+        }
+
+        & h2 {
+            margin-top: 75px;
+            line-height: 1.4;
+        }
+    }
+
     & .logo {
         max-width: 250px;
         height: auto;

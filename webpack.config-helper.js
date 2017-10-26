@@ -30,7 +30,8 @@ module.exports = (options) => {
         template: './src/index.html'
       }),
       new CopyWebpackPlugin([
-        { from: 'src/images', to: 'images' }
+        { from: 'src/images', to: 'images' },
+        { from: 'src/views', to: '' }
       ])
     ],
     module: {

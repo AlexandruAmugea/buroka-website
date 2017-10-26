@@ -34,8 +34,6 @@
         }
 
         & li.active {
-            background: lighten( $green, 10%);
-
             & a {
                 font-weight: 700;
             }

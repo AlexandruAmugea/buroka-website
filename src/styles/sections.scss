@@ -221,3 +221,138 @@ footer {
         }
     }
 }
+
+.section-crypto--chart {
+    padding: 75px 0;
+
+    & h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        position: relative;
+        margin: 0 0 75px;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+}
+
+.section-crypto--description {
+    background: url('~/images/bg/crypto-section.jpg') no-repeat left top;
+    background-size: cover;
+    padding: 75px 0 0;
+
+    & h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & h3 {
+        margin: 50px 0;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    & .section-crypto--description--table-subheader {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: 15px 0;
+        & h3 {
+            margin: 0;
+            font-weight: 300;
+        }
+
+
+    }
+
+    & .section-crypto--description--table-header {
+        border-top: 1px solid $white;
+        h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        & .row {
+            & .col-sm-4 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            & .col-sm-4:nth-child(2) {
+                background-color: $green;
+            }
+        }
+    }
+
+    & .section-crypto--description--table-body {
+        & .row {
+            & .col-sm-4 {
+                padding-top: 15px;
+                padding-bottom: 55px;
+            }
+
+            & .col-sm-4:nth-child(2) {
+                background-color: #202745;
+
+                &:after {
+                    @include heading-underline(100%, 5px, $green);
+                    left: 0;
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+}
+
+.section-quotes {
+    padding: 75px 0 25px;
+
+    & > h2 {
+        font-weight: 600;
+        margin: 0 0 75px;
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & .row {
+        margin-bottom: 60px;
+
+        & h2 {
+            font-weight: 600;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        & h2, & h6, & p {
+            color: $green;
+        }
+
+        & h6 {
+            font-weight: 600;
+        }
+
+        & p {
+            font-weight: 400;
+        }
+    
+        & img {
+            margin-right: 20px;
+        }
+    }
+}
