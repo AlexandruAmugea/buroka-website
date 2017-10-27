@@ -295,3 +295,59 @@
         }
     }
 }
+
+/* ====================
+        Tooltips
+=====================*/
+
+.tooltip {
+    background:$white;
+    box-shadow: 3px 3px 12px lighten($black, 70%),
+                -3px -3px 12px lighten($black, 70%);
+                width: 300px;
+}
+
+.tooltip > .tooltip-inner {
+    background-color:$white; 
+    color: $black;
+    border: 1px solid $white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.tooltip.in {
+    opacity: 1;
+}
+
+/* Tooltip on top */
+.tooltip.top > .tooltip-arrow {
+    border-top: 5px solid $white;
+}
+
+/* Tooltip on bottom */
+.tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid $white;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    margin-top: -5px;
+}
+
+.tooltip h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.tooltip ul {
+    & li {
+        font-size: 12px;
+        text-align: left;
+        font-weight: 400;
+    }
+}

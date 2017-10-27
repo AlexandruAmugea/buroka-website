@@ -380,3 +380,49 @@ footer {
         float: left;
     }
 }
+
+.section-partners {
+    padding: 75px 0;
+    background: $white;
+
+    & h2 {
+        font-weight: 600;
+        margin: 0 0 75px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 75px;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & .row {
+        margin-bottom: 75px;
+    }
+}
+
+.section-youtube {
+    padding: 75px 0;
+
+    & h2 {
+        font-weight: 600;
+        margin: 0 0 75px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 75px;
+        text-align: center;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & h3 {
+        margin-top: 30px;
+    }
+}
