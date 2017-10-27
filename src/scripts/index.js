@@ -11,8 +11,6 @@ import angular from 'angular';
 import angularroute from 'angular-route';
 import instagramSearchDataService from './services/instagramSearchDataService';
 import instagramService from './services/instagramFactory';
-import mainCtrl from './controllers/mainCtrl';
-import galleryCtrl from './controllers/galleryCtrl';
 import sliderInstaFeed from './directives/sliderInstaFeed';
 
 // Define the templates 
@@ -21,30 +19,11 @@ var contactView = require('raw-loader!./views/contact.html');
 var portfolioView = require('raw-loader!./views/portfolio.html');
 
 // Bootstrap the app
-var app = angular.module('MaryTricks', [
+var app = angular.module('buroka', [
   "ngRoute"
 ]);
 
 app.service('instagramSearchDataService', instagramSearchDataService);
 app.factory('instagramService', instagramService);
-
-app.controller('MainCtrl', mainCtrl);
-app.controller('galleryCtrl', galleryCtrl);
 app.directive('sliderInstaFeed', sliderInstaFeed);
-
-config.$inject = ['$routeProvider'];
-function config($routeProvider) {
-  $routeProvider
-  .when("/", {
-      template : homeView
-  })
-  .when("/contact", {
-      template : contactView
-  })
-  .when("/portfolio", {
-      template : portfolioView
-  });
-}
-
-app.config(config);
 

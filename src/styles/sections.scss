@@ -1,3 +1,7 @@
+section {
+    padding: 75px 0;
+}
+
 .section--about-us {
     padding: 75px 0;
     background: $darker-white;
@@ -424,5 +428,27 @@ footer {
 
     & h3 {
         margin-top: 30px;
+    }
+}
+
+.section-instagram {
+
+    & h2 {
+        font-weight: 700;
+        margin: 0 0 75px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 75px;
+        text-align: center;
+        color: $white;
+    }
+    & .section-top {
+        background: $green;
+        padding: 75px 0 150px;
+    }
+
+    & .section-bottom {
+        background: $darker-white;
+        padding-bottom: 75px;
     }
 }

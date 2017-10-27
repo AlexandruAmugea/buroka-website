@@ -1,5 +1,20 @@
 <ul class="slide-insta-feed">
     <li ng-repeat="pic in pictures track by $index">
-        <img ng-src="{{pic.images.thumbnail.url}}" />
+        <div class="normal-view">
+            <img ng-src="{{pic.images.thumbnail.url}}" />
+            <span class="insta-profile-name">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                FX TRADE
+            </span>
+            <a href="" class="insta-preview">
+                <p>FXTRADE<p>
+                <p>a week ago</p>
+                <br>
+                <p class="text-center">best trade advice!</p>
+                <p class="text-center">#trade, #bitcoind</p>
+                <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
     </li>
 </ul>
