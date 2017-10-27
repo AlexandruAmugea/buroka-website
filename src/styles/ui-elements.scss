@@ -10,6 +10,9 @@
 
 .custom--tabs {
     padding: 100px 0;
+    &.custom--tabs-no-padding {
+        padding: 0 0 30px;
+    }
     & h1 {
         font-size: 36px;
         font-weight: 600;
@@ -97,6 +100,134 @@
             & li {
                 width: 30%;
                 margin-right: 4%;
+            }
+
+            & li:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &.custom--tabs-nav-4col {
+            max-width: 1170px;
+            padding: 0;
+            & li {
+                width: 23%;
+                margin-right: 2%;
+                position: relative;
+
+                & a {
+                    padding: 55px 0 75px;
+
+                    & img {
+                        height: 40px;
+                        width: auto;
+                    }
+
+                    & h2, & p {
+                        text-transform: uppercase;
+                        color: $black;
+                    }
+
+                    & p {
+                        font-weight: 400;
+                        color: black;
+                        font-size: 24px;
+                    }
+                }
+
+                &.active{
+                    box-shadow: 9px 9px 26px lighten( $black, 60%),
+                                -2px -2px 18px lighten( $black, 70%);
+                    border-radius: 5px;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: calc(50% - 13px);
+                        bottom: -73px;
+                        height: 26px;
+                        width: 26px;
+                        background: url("~/images/home/green-arrow.png") no-repeat left top;
+                        background-size: 100%;
+                    }
+
+                    & img {
+                        height: 60px;
+                    }
+
+                    & a {
+                        padding: 55px 0 75px;
+    
+                        & img {
+                            height: 60px;
+                            width: auto;
+                        }
+    
+                        & h2, & p {
+                            text-transform: uppercase;
+                            color: $black;
+                        }
+    
+                        & p {
+                            font-weight: 400;
+                            color: $green;
+                        }
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 3px 9px 26px lighten( $black, 80%),
+                    -12px -3px 26px lighten( $black, 90%);
+                    border-radius: 5px;
+
+                    & a {
+                        padding: 75px 0;
+    
+                        & img {
+                            height: 40px;
+                            width: auto;
+                        }
+    
+                        & h2, & p {
+                            text-transform: uppercase;
+                            color: $black;
+                        }
+    
+                        & p {
+                            font-weight: 400;
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.active:hover{
+                    box-shadow: 9px 9px 26px lighten( $black, 60%),
+                    -2px -2px 18px lighten( $black, 70%);
+                    border-radius: 5px;
+
+                    & img {
+                        height: 60px;
+                    }
+
+                    & a {
+                        padding: 55px 0 75px;
+    
+                        & img {
+                            height: 60px;
+                            width: auto;
+                        }
+    
+                        & h2, & p {
+                            text-transform: uppercase;
+                            color: $black;
+                        }
+    
+                        & p {
+                            font-weight: 400;
+                            color: $green;
+                        }
+                    }
+                }
             }
 
             & li:last-child {

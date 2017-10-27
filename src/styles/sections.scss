@@ -356,3 +356,27 @@ footer {
         }
     }
 }
+
+.section-clients-tabs {
+    padding: 50px 0;
+    border-top: 1px solid $green;
+    background: url('~/images/home/bg.jpg') no-repeat left top;
+    background-size: cover;
+
+    ul {
+        color: $green;
+        max-width: 100%;
+        padding: 0 0 0 15px;
+        & li {
+            float: left;
+            margin-bottom: 10px;
+            width: 25%;
+        }
+    }
+
+    & .btn-green {
+        clear: both;
+        margin: 50px 0 0;
+        float: left;
+    }
+}
