@@ -69,6 +69,16 @@
             margin-top: 75px;
             line-height: 1.4;
         }
+
+        &:after {
+            content: "";
+            width: 60%;
+            height: 10px;
+            bottom: -10px;
+            left: 20%;
+            background: $green;
+            position: absolute;
+        }
     }
 
     & .logo {
