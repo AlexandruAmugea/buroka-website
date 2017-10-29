@@ -76,6 +76,11 @@
         height: auto;
     }
 
+    &.header-white {
+        background: $white;
+        padding-bottom: 0px;
+    }
+
     &.header-existing {
         background: url('~/images/bg/existing-bg.jpg') no-repeat left top;
         background-size: cover;

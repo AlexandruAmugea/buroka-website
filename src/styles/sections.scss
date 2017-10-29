@@ -408,6 +408,64 @@ footer {
     }
 }
 
+.section-news {
+    padding: 75px 0 0;
+    background: $white;
+
+    & > h2 {
+        font-weight: 600;
+        margin: 0 0 75px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 75px;
+
+        &:after {
+            @include heading-underline(150px, 5px, $green);
+            left: calc(50% - 75px);
+            bottom: -10px;
+        }
+    }
+
+    & article {
+        margin: 30px 0;
+        & h5 {
+            color: $green;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 0 0;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        p.article-details {
+            margin: 5px;
+            font-size: 12px;
+            color: $black;
+
+            & span {
+                margin-right: 30px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    & h3 {
+        text-transform: uppercase;
+    }
+
+    & .row {
+        margin-bottom: 75px;
+    }
+}
+
 .section-youtube {
     padding: 75px 0;
 
