@@ -67,3 +67,18 @@ a {
     padding-left: 0;
 }
 
+.header-contact {
+    float: right;
+    margin-top: 20px;
+}
+
+.header-contact a {
+    color: $white;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.header-white .header-contact a {
+    color: $black;
+}

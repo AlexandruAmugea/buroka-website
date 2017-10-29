@@ -39,3 +39,25 @@ input.form-control:-moz-placeholder,
 textarea.form-control:-moz-placeholder { /* Firefox 18- */
     color: $green;
 }
+
+.form-group {
+    position: relative;
+}
+
+input.form-control.error {
+    border: 1px solid red;
+}
+
+label.error {
+    // position: absolute;
+    // width: 150px;
+    // padding: 5px;
+    // right: -160px;
+    // top: 0px;
+    // color: red;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: red;
+}

@@ -27,3 +27,37 @@ app.service('instagramSearchDataService', instagramSearchDataService);
 app.factory('instagramService', instagramService);
 app.directive('sliderInstaFeed', sliderInstaFeed);
 
+
+$(document).ready(function () {
+  $('#consultationForm').validate({
+    messages: {
+      name: "Please enter your name",
+      phone: "Please enter phone number",
+      email: "Please enter a valid email"
+    }
+  });
+
+  $('#contactForm').validate({
+    messages: {
+      name: "Please enter your name",
+      phone: "Please enter phone number",
+      email: "Please enter a valid email",
+      company: "Please enter your company name"
+    }
+  });
+
+  $(".btn-cta-consultation").click(function () {
+    $('html, body').animate({
+      scrollTop: $("#form-consultation").offset().top
+    }, 2000);
+  });
+
+  $('[data-toggle="tooltip"]').tooltip(
+    { html: true }
+  );
+});
+
+
+
+
+
