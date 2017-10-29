@@ -56,3 +56,14 @@ a {
     }
 }
 
+.hr-green {
+    border-color: $green;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-no-style {
+    list-style: none;
+    padding-left: 0;
+}
+

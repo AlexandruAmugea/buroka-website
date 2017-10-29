@@ -76,6 +76,47 @@
         height: auto;
     }
 
+    &.header-existing {
+        background: url('~/images/bg/existing-bg.jpg') no-repeat left top;
+        background-size: cover;
+        padding-bottom: 75px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 60%;
+            height: 10px;
+            bottom: -10px;
+            left: 20%;
+            background: $green;
+            position: absolute;
+        }
+
+        & .btn-green {
+            margin: 75px 0 0;
+        }
+
+        & h2 {
+            margin-top: 75px;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        & ul.list--header-presentation {
+            max-width: 800px;
+            margin: 0 auto;
+
+            & li {
+                float: left;
+                width: 50%;
+                color: $white;
+                text-align: left;
+                margin-bottom: 10px;
+                font-weight: 200;
+            }
+        }
+    }
+
     &.header-home {
         position: absolute;
         left: calc(50% - 600px);

@@ -452,3 +452,20 @@ footer {
         padding-bottom: 75px;
     }
 }
+
+.section-grey {
+    background: $darker-white;
+    padding: 25px 0;
+}
+
+.section-green {
+    background: $green;
+
+    h2, h1, h3, p {
+        color: $white;
+    }
+}
+
+.section-green.section-green-xs {
+    padding: 25px 0;
+}

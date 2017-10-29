@@ -13,6 +13,9 @@
     &.custom--tabs-no-padding {
         padding: 0 0 30px;
     }
+    &.custom--tabs-existing {
+        padding: 75px 0 0px;
+    }
     & h1 {
         font-size: 36px;
         font-weight: 600;
@@ -234,6 +237,130 @@
                 margin-right: 0;
             }
         }
+
+        // Custom tabs existing brokers
+
+        &.custom--tabs-existing.custom--tabs-nav-4col {
+            max-width: 1170px;
+            padding: 0;
+            & li {
+                width: 23%;
+                margin-right: 2%;
+                margin-bottom: 15px;
+                position: relative;
+
+                & a {
+                    padding: 60px 0;
+
+                    & img {
+                        height: 40px;
+                        width: auto;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        filter: gray;
+                    }
+
+                    & h2 {
+                        font-size: 22px;
+                        text-transform: none;
+                    }
+
+                    & p {
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: black;
+                        font-size: 16px;
+                    }
+                }
+
+                &.active{
+                    box-shadow: 9px 9px 26px lighten( $black, 60%),
+                                -2px -2px 18px lighten( $black, 70%);
+                    border-radius: 5px;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: calc(50% - 13px);
+                        bottom: -73px;
+                        height: 26px;
+                        width: 26px;
+                        background: url("~/images/home/green-arrow.png") no-repeat left top;
+                        background-size: 100%;
+                        display: none;
+                    }
+                    & a {
+                        padding: 60px 0;
+                        & img {
+                            -webkit-filter: grayscale(0%);
+                            filter: grayscale(0%);
+                        }
+                        & h2 {
+                            text-transform: none;
+                            color: $black;
+                        }
+    
+                        & p {
+                            color: $green;
+                            
+                        }
+                    }
+                    
+                }
+
+                &:hover {
+                    box-shadow: 3px 9px 26px lighten( $black, 80%),
+                    -12px -3px 26px lighten( $black, 90%);
+                    border-radius: 5px;
+
+                    & a {
+                        padding: 60px 0;
+    
+                        & img {
+                            -webkit-filter: grayscale(0%);
+                            filter: grayscale(0%);
+                        }
+                        & p {
+                            color: $green;
+                            
+                        }
+                    }
+                }
+
+                &.active:hover{
+                    box-shadow: 9px 9px 26px lighten( $black, 60%),
+                    -2px -2px 18px lighten( $black, 70%);
+                    border-radius: 5px;
+
+                    & a {
+                        padding: 60px 0;
+    
+                        & img {
+                            height: 40px;
+                            width: auto;
+                        }
+    
+                        & h2 {
+                            text-transform: none;
+                            color: $black;
+                        }
+    
+                        & p {
+                            color: $green;
+                            
+                        }
+                    }
+                }
+            }
+
+            & li:nth-child(4) {
+                margin-right: 0;
+            }
+
+            & li:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
     & hr {
@@ -434,5 +561,18 @@
                 font-size: 10px;
             }
         }
+    }
+}
+
+.tap-pannel-existing {
+    padding: 25px 0 75px;
+    background: $white;
+
+    & h4 {
+        text-transform: uppercase;
+        font-size: 70px;
+        margin: 40px 0 -20px;
+        color: lighten( $green, 40%);
+        font-weight: 700;
     }
 }
