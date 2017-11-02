@@ -343,7 +343,7 @@ footer {
             text-transform: uppercase;
         }
 
-        & h2, & h6, & p {
+        & h2, & h6 {
             color: $green;
         }
 
@@ -358,6 +358,10 @@ footer {
         & img {
             margin-right: 20px;
         }
+    }
+
+    & P {
+        color: lighten($black, 50%);
     }
 }
 
