@@ -27,121 +27,402 @@ and (orientation: landscape) {
 }
 
 @media (max-width: 768px) {
-   .slide-insta-feed {
-       display: none;
-   }
+    .header {
+        padding: 30px 0;
+    }
 
-   .instagram-box {
-       position: static;
-       margin: 20px auto;
-   }
+    .main--menu {
+        max-width: 310px;
+        margin: 15px auto;
+    }
 
-   .desktop-nav {
-       position: fixed;
-       left: -200px;
-       top: 0;
-       width: 200px;
-       height: 100%;
-       background: $white;
-       z-index: 3001;
-   }
+    .main--menu ul li:first-child {
+        padding: 10px 10px 10px 20px;
+    }
 
-   #background-wrapper {
-       position: fixed;
-       left: 0; 
-       top: 0;
-       background: rgba(0,0,0,0.25);
-       width: 100%;
-       height: 100%;
-       display: none;
-       z-index: 3000;
-   }
+    .main--menu ul li:last-child {
+        padding: 10px 20px 10px 10px;
+    }
 
-   #background-wrapper.opened {
-       display: block;
-   }
+    .main--menu ul li a {
+        font-size: 14px;
+    }
 
-   .desktop-nav.active {
-       left: 0;
-   }
+    .header .secondary--menu {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto 15px;
+    }
 
-   .desktop-nav ul {
-       margin-top: 50px;
-   }
+    .header-contact {
+        float: right;
+        max-width: 200px;
+        margin-top: 0px;
 
-   .desktop-nav ul li {
-       float: none;
-       display: block;
-       list-style: none;
-       margin: 20px;
-       text-align: center;
-   }
+    }
 
-   .desktop-nav ul li:first-child {
-       margin: 20px;
-   }
+    .header-contact a {
+        display: block;
+        float: right;
+        font-size: 12px;
+    }
 
-   .lang-anchor {
-       display: none;
-   }
+    .header.header--brokerage h2 {
+        margin: 30px auto;
+        font-size: 20px;
+    }
 
-   .logo {
-       width: 125px;
-       margin-bottom: 0;
-       padding-bottom: 0;
-   }
+    .header.header--brokerage .btn-green {
+        margin-top: 0px;
+    }
 
-   h2 {
-       font-size: 24px;
-   }
+    .btn-green {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
 
-   .btn-arrow.btn-arrow--wborder {
-       padding: 10px 20px;
-       font-size: 16px;
-       
-   }
+    .header.header--brokerage {
+        padding-bottom: 50px;
+    }
 
-   .btn-arrow {
-        border: 2px solid $orange;
-        padding: 10px 20px;
-        font-size: 16px;
-   }
+    // Typography
 
-   .btn-arrow .arrow-wrapper {
-       display: none;
-   }
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    h2 strong {
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        color: $black;
+    }
+    
+    p em {
+        font-size: 14px;
+        font-style: italic;
+    }
 
-   #instagram {
-       margin: 20px 0;
-   }
+    .header h2 strong {
+        font-size: 24px;
+    }
 
-   .carousel-indicators {
-       bottom: -50px;
-   }
+    .header .consultation--form form {
+        margin: 0 auto;
+    }
 
-   .preview-wrapper {
-       display: none;
-   }
+    .header.header-white {
+        padding-bottom: 30px;
+    }
 
-   .img-gallery-thumbnail, .img-gallery-preview {
-       padding: 0 30px;
-   }
+    // Tabs 
 
-   .contact h2 {
-       margin-top: 0px;
-   }
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav li a {
+        padding: 10px 0;
+    }
 
-   body.contact {
-       background-size: cover;
-   }
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav-3col li {
+        width: 32%;
+        margin-right: 0.5%;
+    }
 
-   .mobile-menu-button {
-       display: block;
-   }
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav li a h2 img {
+        display: block;
+        margin: 0 auto 15px;
+    }
 
-   .desktop-nav .logo  {
-       display: block;
-       margin: 0 auto;
-       width: 125px;
-   }
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav li a h2 {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav li a p {
+        font-size: 12px;
+    }
+
+    .custom--tabs {
+        padding: 30px 0;
+    }
+
+    .section-bank-offer {
+        padding: 30px 0;
+    }
+
+    .consultation--form {
+        padding: 30px 0;
+    }
+
+    .consultation--form form {
+        padding: 30px 0 0;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 50px 0;
+        background: $darkBlue;
+    }
+
+    footer h5 {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    footer ul.social-icons-footer {
+        float: none;
+        margin: 10px auto;
+        max-width: 125px;
+        display: block;
+    }
+
+    .header .logo {
+        width: 230px; 
+        height: auto;
+        margin: 0 auto 15px;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    .header.header-crypto h2 {
+        margin: 30px 0;
+        padding: 0 15px;
+        line-height: 1;
+    }
+
+    .header.header-crypto .btn-green {
+        margin: 15px auto 0;
+    }
+
+    .header.header-crypto {
+        padding-bottom: 60px;
+    }
+
+    .section-quotes .row img {
+        max-width: 150px; 
+        display: block;
+        margin: 0 auto;
+        float: none !important;
+    }
+
+    .section-crypto--chart {
+        display: none;
+    }
+
+    .header.header-existing h2 {
+        font-size: 32px;
+        margin: 30px 0;
+        line-height: 1.2;
+    }
+
+    .header.header-existing ul.list--header-presentation li {
+        width: 100%;
+    }
+
+    .header.header-existing .btn-green {
+        margin: 30px 0;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li {
+        width: 24%;
+        padding: 0;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li a h2 {
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li a p {
+        font-size: 6px;
+        margin-bottom: 0;
+    }
+
+    .tap-pannel-existing {
+        padding: 0 0 25px;
+    }
+
+    .tap-pannel-existing h4 {
+        font-size: 40px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li a {
+        padding: 15px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li.active:hover a {
+        padding: 15px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li.active a {
+        padding: 15px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li.active:hover a img {
+        width: auto;
+        height: 30px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li.active a img {
+        width: auto;
+        height: 30px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-existing.custom--tabs-nav-4col li a img {
+        width: auto;
+        height: 30px;
+    }
+
+    .custom--tabs .custom--tabs-nav {
+        margin-bottom: 0px;
+    }
+
+    .section-news article h5 {
+        margin-top: 15px;
+    }
+
+    .img-responsive {
+        width: 100%;
+    }
+
+    .header.header-startup h2 {
+        font-size: 18px;
+        line-height: 1.25;
+        margin: 30px auto 0;
+    }
+
+    .header.header-startup {
+        padding-bottom: 75px;
+    }
+
+    .header.header-startup .btn-green {
+        margin-top: 25px;
+    }
+
+    .section-prices {
+        padding: 0px 0 50px;
+    }
+
+    .header.header--about-us {
+        padding-bottom: 25px;
+    }
+
+    .header.header--about-us h2 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .header.header-home {
+        left: 0;
+    }
+
+    // Carousel 
+
+    .slick-carousel .description h2 {
+        font-size: 20px;
+    }
+
+    .slick-carousel .description {
+        left: 0;
+        padding: 15px;
+    }
+
+    .slick-slider {
+        max-height: 900px;
+        overflow: hidden;
+    }
+
+    // Custom tabs home page 
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav-4col li {
+        width: 24%;
+        margin-right: 0;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav li a {
+        padding: 20px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav-4col li.active a {
+        padding: 20px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav-4col li.active:hover a {
+        padding: 20px 5px;
+    }
+
+    .custom--tabs .custom--tabs-nav.custom--tabs-nav-4col li.active:after {
+        bottom: -30px;
+    }
+
+    .section-clients-tabs ul li {
+        width: 100%;
+    }
+
+    .section-partners img {
+        max-width: 200px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .slide-insta-feed {
+        display: block;
+    }
+
+    .section-instagram .gallery-wrapper {
+        margin-top: 0;
+    }
+
+    .section-instagram .section-top {
+        padding: 30px 0;
+    }
+
+    .section-instagram h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-instagram .gallery-wrapper ul li {
+        width: 50%;
+    }
+
+    .section-instagram .gallery-wrapper ul li:nth-child(odd) .normal-view  {
+        max-width: 150px;
+        float: right;
+    }
+
+    .section-instagram .section-bottom {
+        padding-bottom: 0px;
+    }
+
+    .section-partners {
+        padding: 30px 0 0;
+    }
+
+    .section-youtube {
+        padding: 30px 0 0;
+    }
+
+    .section-clients-tabs {
+        padding: 25px 0;
+    }
+
+    .section-clients-tabs .btn-green {
+        margin: 25px 0;
+    }
+    
 }
