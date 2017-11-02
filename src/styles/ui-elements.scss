@@ -147,11 +147,11 @@
                         content: "";
                         position: absolute;
                         left: calc(50% - 13px);
-                        bottom: -73px;
-                        height: 26px;
-                        width: 26px;
+                        bottom: -60px;
+                        height: 16px;
+                        width: 24px;    
                         background: url("~/images/home/green-arrow.png") no-repeat left top;
-                        background-size: 100%;
+                        background-size: 24px 16px;
                     }
 
                     & img {
