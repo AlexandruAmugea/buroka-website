@@ -1,6 +1,6 @@
 const KEYS = {
-    "instagramToken": "5908775470.1677ed0.89ecacbfc0bf4d1c9cd5746edc773c34",
-    "instagramUser": "5908775470"
+    "instagramToken": "6350004352.1677ed0.b4b2249caa4142f98134741c80f4321b",
+    "instagramUser": "6350004352"
 };
 
 export default KEYS;
